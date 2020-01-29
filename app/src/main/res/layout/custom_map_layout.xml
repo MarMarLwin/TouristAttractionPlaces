@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@drawable/round_background"
+    android:padding = "@dimen/small_margin">
+
+    <TextView
+        android:id = "@+id/nameTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginEnd = "8dp"
+        android:gravity = "center"
+        android:minWidth = "200dp"
+        android:text = "Yangon Zoological Garden"
+        android:textStyle = "bold"
+        app:layout_constraintBottom_toTopOf = "@+id/addressTxtView"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent"/>
+
+    <ImageView
+        android:id = "@+id/imageView"
+        android:layout_width = "25dp"
+        android:layout_height = "25dp"
+        android:layout_marginBottom = "8dp"
+        android:contentDescription = "@string/address"
+        app:layout_constraintBottom_toTopOf = "@+id/imageView2"
+        app:layout_constraintEnd_toStartOf = "@+id/addressTxtView"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "@+id/addressTxtView"
+        app:layout_constraintVertical_bias = "0.6"
+        app:srcCompat = "@drawable/ic_place"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id = "@+id/addressTxtView"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "8dp"
+        android:text = "@string/address"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.134"
+        app:layout_constraintStart_toEndOf = "@+id/imageView"
+        app:layout_constraintTop_toBottomOf = "@+id/nameTextView"/>
+
+    <ImageView
+        android:id = "@+id/imageView2"
+        android:layout_width = "25dp"
+        android:layout_height = "25dp"
+        android:layout_marginBottom = "8dp"
+        android:contentDescription = "@string/openHr"
+        app:layout_constraintBottom_toTopOf = "@+id/imageView3"
+        app:layout_constraintEnd_toStartOf = "@+id/openHrTextView"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "@+id/openHrTextView"
+        app:srcCompat = "@drawable/ic_time"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id = "@+id/openHrTextView"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "8dp"
+        android:text = "@string/openHr"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toEndOf = "@+id/imageView2"
+        app:layout_constraintTop_toBottomOf = "@+id/addressTxtView"/>
+
+    <ImageView
+        android:id = "@+id/imageView3"
+        android:layout_width = "25dp"
+        android:layout_height = "25dp"
+        android:layout_marginEnd = "8dp"
+        android:contentDescription = "@string/price"
+        app:layout_constraintBottom_toBottomOf = "@+id/priceTextView"
+        app:layout_constraintEnd_toStartOf = "@+id/priceTextView"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "@+id/priceTextView"
+        app:srcCompat = "@drawable/ic_money"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/price"
+        app:layout_constraintEnd_toStartOf="@+id/currencyTxtView"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/openHrTextView" />
+
+    <TextView
+        android:id="@+id/currencyTxtView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/currency"
+        app:layout_constraintStart_toEndOf="@+id/priceTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openHrTextView" />
+
+    <Button
+        android:id="@+id/selectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/select"
+        android:background="@drawable/round_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/priceTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

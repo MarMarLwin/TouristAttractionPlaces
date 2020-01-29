@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tourist Attraction Places</string>
+    <string name="submit">Submit</string>
+    <string name="done">Done</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="require_field">This field is required.</string>
+    <string name="incorrect_format">Incorrect Format</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="address">Address</string>
+    <string name="openHr">Open Hour</string>
+    <string name="price">1000.0</string>
+    <string name="currency">MMK</string>
+    <string name="select">select</string>
+    <string name="unselect">unselect</string>
+    <string name="total">Total Amount :</string>
+</resources>

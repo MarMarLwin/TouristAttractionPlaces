@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin = "@dimen/small_margin"
+    android:foreground = "?android:attr/selectableItemBackground"
+    android:background="@color/white"
+    cardview:cardCornerRadius = "5dp"
+    cardview:cardElevation = "2dp"
+    cardview:cardUseCompatPadding = "true"
+    cardview:layout_constraintEnd_toEndOf = "parent"
+    cardview:layout_constraintStart_toStartOf = "parent"
+    cardview:layout_constraintTop_toTopOf = "parent">
+
+    <RelativeLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_margin = "5dp"
+        android:padding = "10dp">
+        <TextView
+            android:id = "@+id/numTxtView"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "1."
+            android:layout_marginTop = "@dimen/min_margin"
+            android:layout_marginEnd = "@dimen/small_margin"
+            android:gravity="center_vertical"
+            android:textColor = "@color/colorPrimaryDark"
+            android:textSize = "12sp"
+            android:textStyle = "bold"/>
+        <TextView
+            android:id = "@+id/placeNameTxtView"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "@dimen/min_margin"
+            android:layout_marginEnd = "@dimen/small_margin"
+            android:text = "Yangon Zoological Garden"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/numTxtView"
+            android:textColor = "@color/colorPrimaryDark"
+            android:textSize = "12sp"
+            android:textStyle = "bold"/>
+
+        <TextView
+            android:id = "@+id/addressTxtView"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@id/placeNameTxtView"
+            android:layout_marginTop = "@dimen/min_margin"
+            android:layout_marginEnd = "@dimen/small_margin"
+            android:drawableStart="@drawable/ic_place"
+            android:text = "Kan Yeik Tha Rd, Yangon"
+            android:gravity="center_vertical"
+            android:textColor = "@color/colorTextView"
+            android:textSize = "12sp"
+            android:textStyle = "normal"/>
+        <TextView
+            android:id = "@+id/openHrTxtView"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@id/addressTxtView"
+            android:layout_marginTop = "@dimen/min_margin"
+            android:layout_marginEnd = "@dimen/small_margin"
+            android:drawableStart="@drawable/ic_time"
+            android:text = "7:00 AM-5:00PM"
+            android:gravity="center_vertical"
+            android:textColor = "@color/colorTextView"
+            android:textSize = "12sp"
+            android:textStyle = "normal"/>
+        <TextView
+            android:id = "@+id/ticketPriceTxtView"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_below="@+id/openHrTxtView"
+            android:text="1000"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/ic_money"
+            android:textColor = "@color/colorTextView"
+            android:textSize = "12sp" />
+
+        <TextView
+            android:id="@+id/currencyTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/openHrTxtView"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginTop="@dimen/min_margin"
+            android:layout_toEndOf="@+id/ticketPriceTxtView"
+            android:layout_toRightOf="@+id/ticketPriceTxtView"
+            android:gravity="center_vertical"
+            android:text="MMK"
+            android:textColor="@color/colorTextView"
+            android:textSize="12sp" />
+        <ImageView
+            android:id = "@+id/photoImgView"
+            android:layout_width = "100dp"
+            android:layout_height = "100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/map"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_alignParentEnd = "true"
+            android:layout_centerVertical = "true" />
+        <TextView
+            android:id = "@+id/detailTxtView"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text=">>"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:layout_alignParentEnd = "true"
+            android:layout_centerVertical = "true" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
